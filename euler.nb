@@ -1,0 +1,83 @@
+Notebook[{Cell[
+BoxData[{RowBox[{"ExactSol","="," ",RowBox[{"DSolve","[",RowBox[{RowBox[
+{"{",RowBox[{RowBox[{RowBox[{RowBox[{"y","'"}],"[","x","]"}],"==",RowBox[{"x","+",RowBox[
+{"y","[","x","]"}]}]}],",",RowBox[{RowBox[{"y","[","0","]"}],"==","1.0"}]}],"}"}],",",RowBox[
+{"y","[","x","]"}],",","x"}],"]"}]}],"\n",RowBox[{RowBox[{"L","[",RowBox[{"x_",",","y_"}],"]"}],":=",RowBox[
+{"x","+","y"}]}],"\n",RowBox[{RowBox[{"n","=","10"}],";"}],"\n",RowBox[{RowBox[{"a","=","0.0"}],";"}],"\n",RowBox[
+{RowBox[{"b","=","1.0"}],";"}],"\n",RowBox[{RowBox[{"h","=",RowBox[{RowBox[{"(",RowBox[
+{"b","-","a"}],")"}],"/","n"}]}],";"}],"\n",RowBox[{RowBox[{RowBox[{"y","[","0","]"}],"=","1.0"}],";"}],"\n",RowBox[
+{RowBox[{"y0","=",RowBox[{"y","[","0","]"}]}],";"}],"\n",RowBox[{RowBox[{"For","[",RowBox[
+{RowBox[{"i","=","0"}],",",RowBox[{"i","\[LessEqual]",RowBox[{"n","-","1"}]}],",",RowBox[
+{"i","++"}],",",RowBox[{RowBox[{RowBox[{"z","[","i","]"}],"=",RowBox[{"a","+",RowBox[
+{"i","*","h"}]}]}],";","\n",RowBox[{RowBox[{"y","[","i","]"}],"=","y0"}],";","\n",RowBox[
+{RowBox[{"y","[",RowBox[{"i","+","1"}],"]"}],"=",RowBox[{RowBox[{"y","[","i","]"}],"+",RowBox[
+{"h","*",RowBox[{"L","[",RowBox[{RowBox[{"y","[","i","]"}],",",RowBox[{"y","[","i","]"}]}],"]"}]}]}]}],";","\n",RowBox[
+{"Print","[",RowBox[{"\"The\"",",",RowBox[{"i","+","1"}],",","\"Approx. vause is \"",",",RowBox[
+{"y","[",RowBox[{"i","+","1"}],"]"}]}],"]"}],";","\n",RowBox[{"y0","=",RowBox[{"y","[",RowBox[
+{"i","+","1"}],"]"}]}]}]}],"]"}],";"}]}],"Input",CellLabel -> "In[230]:= ",ExpressionUUID -> "19d7b3f2-9fdb-48ea-a40b-c031c516a884"],Cell[
+BoxData[
+TemplateBox[{"DSolve","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"3\\\"}], \\\"}\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,230,173,22467854775707364249,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "f565c01d-6d38-4756-996a-e84c294aae44"],Cell[
+BoxData[
+RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{SuperscriptBox[RowBox[
+{"{",RowBox[{"0",",","1",",","3"}],"}"}],"\[Prime]",MultilineFunction -> None],"[","x","]"}],"\[Equal]",RowBox[
+{"x","+",RowBox[{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","x","]"}]}]}],",",RowBox[
+{RowBox[{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","0","]"}],"\[Equal]","1.`"}]}],"}"}],",",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","x","]"}],",","x"}],"]"}],StandardForm],
+"Output",CellLabel -> "Out[230]= ",ExpressionUUID -> "eab421d4-091a-4127-adda-0a05c5d1a88e"],Cell[
+BoxData[
+TemplateBox[{"Set","write","\"Tag \\!\\(\\*TagBox[\\\"List\\\", Short[#1, 5] & ]\\) in \\!\\(\\*TagBox[RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"3\\\"}], \\\"}\\\"}], \\\"[\\\", \\\"0\\\", \\\"]\\\"}], Short[#1, 5] & ]\\) is Protected.\"",2,236,174,22467854775707364249,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "fdc2f8ca-0c16-49aa-aa1c-10f15cb3aa4d"],Cell[
+BoxData[
+TemplateBox[{"Set","write","\"Tag \\!\\(\\*TagBox[\\\"List\\\", Short[#1, 5] & ]\\) in \\!\\(\\*TagBox[RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"3\\\"}], \\\"}\\\"}], \\\"[\\\", \\\"0\\\", \\\"]\\\"}], Short[#1, 5] & ]\\) is Protected.\"",2,238,175,22467854775707364249,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "e66e4802-0f3e-4d96-94c3-bb2865218e1e"],Cell[
+BoxData[
+TemplateBox[{"Set","write","\"Tag \\!\\(\\*TagBox[\\\"List\\\", Short[#1, 5] & ]\\) in \\!\\(\\*TagBox[RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"3\\\"}], \\\"}\\\"}], \\\"[\\\", \\\"1\\\", \\\"]\\\"}], Short[#1, 5] & ]\\) is Protected.\"",2,238,176,22467854775707364249,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "aa6f0de2-2e2f-4cd6-99a5-e5238c35732b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","1","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","1","]"}]}],SequenceForm["The",
+1,"Approx. vause is ",{0,1,3}[1]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "59120fb0-5f15-45c9-afe4-f8fdc7dff569"],Cell[
+BoxData[
+TemplateBox[{"Set","write","\"Tag \\!\\(\\*TagBox[\\\"List\\\", Short[#1, 5] & ]\\) in \\!\\(\\*TagBox[RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"3\\\"}], \\\"}\\\"}], \\\"[\\\", \\\"1\\\", \\\"]\\\"}], Short[#1, 5] & ]\\) is Protected.\"",2,238,177,22467854775707364249,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "e8410ef9-975a-4f1e-b976-20dbec254c4e"],Cell[
+BoxData[
+TemplateBox[{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"Set\\\", \\\"::\\\", \\\"write\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,238,178,22467854775707364249,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "80798fca-8b90-4ead-9f63-28189e91690f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","2","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","2","]"}]}],SequenceForm["The",
+2,"Approx. vause is ",{0,1,3}[2]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "d19b8e3f-e169-43a3-861f-3ff3c6262877"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","3","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","3","]"}]}],SequenceForm["The",
+3,"Approx. vause is ",{0,1,3}[3]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "22a2586e-69d9-4502-aea1-97f9051abefe"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","4","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","4","]"}]}],SequenceForm["The",
+4,"Approx. vause is ",{0,1,3}[4]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "3bd1f8c8-37f3-4588-b786-96a296cbee8f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","5","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","5","]"}]}],SequenceForm["The",
+5,"Approx. vause is ",{0,1,3}[5]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "88415309-b875-4795-9afc-8ed1d2af1eb5"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","6","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","6","]"}]}],SequenceForm["The",
+6,"Approx. vause is ",{0,1,3}[6]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "c9b8796d-d20e-4be0-902b-ae5a0d27fc41"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","7","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","7","]"}]}],SequenceForm["The",
+7,"Approx. vause is ",{0,1,3}[7]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "3fc458e0-b55d-4057-a21c-39434807df72"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","8","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","8","]"}]}],SequenceForm["The",
+8,"Approx. vause is ",{0,1,3}[8]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "0d1f3d57-070d-463e-8975-dbc75e7134bd"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","9","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","9","]"}]}],SequenceForm["The",
+9,"Approx. vause is ",{0,1,3}[9]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "f653b2d6-ebe1-4cc0-a5ae-554e26ec795b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"The\"","\[InvisibleSpace]","10","\[InvisibleSpace]","\"Approx. vause is \"","\[InvisibleSpace]",RowBox[
+{RowBox[{"{",RowBox[{"0",",","1",",","3"}],"}"}],"[","10","]"}]}],SequenceForm["The",
+10,"Approx. vause is ",{0,1,3}[10]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "f6aa4175-318b-4cb9-bb8c-8f43edab1209"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13.2 for Wolfram Cloud 1.65 (April 11, 2023)"]

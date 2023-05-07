@@ -1,0 +1,112 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"A = {{3.0, 1.0, 2.0}, {-3.0, 5.0, 1.0}, {1.0, 1.0, 3.0}};"}],"\n",RowBox[
+{"d = {{3.0, 0, 0}, {0, 5.0, 0}, {0, 0, 3.0}};"}],"\n",RowBox[{"u = {{0, 1.0, 2.0}, {0, 0, 1.0}, {0, 0, 0}};"}],"\n",RowBox[
+{"l = {{0, 0, 0}, {-3.0, 0, 0}, {1.0, 1.0, 0}};"}],"\n",RowBox[{"b= Transpose[{{3.0, 7.0, 3.0}}];"}],"\n",RowBox[
+{"x[1]= Transpose[{{0, 0, 0}}];"}],"\n",RowBox[{"Do[x[n+ 1] = LinearSolve[d, -(l+u).x[n]+b];\nPrint[x^n, \"=\", MatrixForm[x[n]]], {n, 1, 15}]"}]}],
+"Input",CellLabel -> "In[130]:= ",ExpressionUUID -> "08b02f6f-f00a-4a8a-8f4a-b12342663b36"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"x","\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0"},{"0"},{"0"}},RowSpacings -> 1,ColumnSpacings -> 1,
+RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],Function[
+BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[x,"=",MatrixForm[{{0},{0},{0}}]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "937161ec-123a-4ce4-a5d7-8fc64cec37a7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","2"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"1.`"},{"1.4`"},{"1.`"}},RowSpacings -> 1,ColumnSpacings -> 1,
+RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],Function[
+BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,2],"=",MatrixForm[{{1.`},{1.4`},{1.`}}]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "db6c355a-ffe5-45ef-b7d3-1914578e0d26"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","3"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{RowBox[{"-","0.1333333333333333`"}]},{"1.8`"},{"0.20000000000000004`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,3],"=",MatrixForm[
+{{-0.1333333333333333`},{1.8`},{0.20000000000000004`}}]],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "8ccf5e00-444b-4862-933d-c845849e0ceb"],Cell[
+BoxData[InterpretationBox[
+RowBox[{SuperscriptBox["x","4"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.2666666666666666`"},{"1.28`"},{"0.4444444444444444`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,4],"=",MatrixForm[
+{{0.2666666666666666`},{1.28`},{0.4444444444444444`}}]],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "0e266b98-f572-4bb3-8cc0-71f76368041b"],Cell[
+BoxData[InterpretationBox[
+RowBox[{SuperscriptBox["x","5"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.27703703703703714`"},{"1.471111111111111`"},{"0.48444444444444446`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,5],"=",MatrixForm[
+{{0.27703703703703714`},{1.471111111111111`},{0.48444444444444446`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "352f39fb-8f4d-41aa-8f15-f557b7c63188"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","6"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.18666666666666668`"},{"1.4693333333333334`"},{"0.4172839506172839`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,6],"=",MatrixForm[
+{{0.18666666666666668`},{1.4693333333333334`},{0.4172839506172839`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "fb644a77-41d4-43c0-8d46-a02594874221"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","7"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.23203292181069957`"},{"1.4285432098765432`"},{"0.44799999999999995`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,7],"=",MatrixForm[
+{{0.23203292181069957`},{1.4285432098765432`},{0.44799999999999995`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "8a6151f9-adbf-45f0-ba1d-150624919c9a"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","8"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.22515226337448566`"},{"1.4496197530864197`"},{"0.4464746227709191`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,8],"=",MatrixForm[
+{{0.22515226337448566`},{1.4496197530864197`},{0.4464746227709191`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "d1c78299-d7f0-455b-a038-66bd372787ec"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","9"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.21914366712391406`"},{"1.4457964334705076`"},{"0.44174266117969824`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,9],"=",MatrixForm[
+{{0.21914366712391406`},{1.4457964334705076`},{0.44174266117969824`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "b2574c69-2b75-433d-9855-606fd0576c0c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","10"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.2235727480566987`"},{"1.4431376680384087`"},{"0.44501996646852615`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,10],"=",MatrixForm[
+{{0.2235727480566987`},{1.4431376680384087`},{0.44501996646852615`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "90a8afd5-b47b-43b1-8276-fd2dcdb12ec2"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","11"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.22227413300817966`"},{"1.445139655540314`"},{"0.44442986130163087`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,11],"=",MatrixForm[
+{{0.22227413300817966`},{1.445139655540314`},{0.44442986130163087`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "27d6ab7e-2995-47b6-95a9-d0a9059df4c5"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","12"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.22200020728547484`"},{"1.4444785075445816`"},{"0.44419540381716877`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,12],"=",MatrixForm[
+{{0.22200020728547484`},{1.4444785075445816`},{0.44419540381716877`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "3a569149-1354-482a-929d-4f5cf15509a2"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","13"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.2223768949403603`"},{"1.4443610436078511`"},{"0.44450709505664787`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,13],"=",MatrixForm[
+{{0.2223768949403603`},{1.4443610436078511`},{0.44450709505664787`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "03d76ce0-16a4-4083-a49f-57c6912a841f"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","14"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.22220825542628445`"},{"1.4445247179528866`"},{"0.4444206871505962`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,14],"=",MatrixForm[
+{{0.22220825542628445`},{1.4445247179528866`},{0.4444206871505962`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "57b29568-9547-4e93-b042-342d2df610ac"],Cell[
+BoxData[
+InterpretationBox[RowBox[{SuperscriptBox["x","15"],"\[InvisibleSpace]","\"=\"","\[InvisibleSpace]",TagBox[
+RowBox[{"(","\[NoBreak]",GridBox[{{"0.22221130258197372`"},{"1.4444408158256514`"},{"0.44442234220694293`"}},
+RowSpacings -> 1,ColumnSpacings -> 1,RowAlignments -> Baseline,ColumnAlignments -> Center],"\[NoBreak]",")"}],
+Function[BoxForm`e$,MatrixForm[BoxForm`e$]]]}],SequenceForm[Power[x,15],"=",MatrixForm[
+{{0.22221130258197372`},{1.4444408158256514`},{0.44442234220694293`}}]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "90b164eb-5329-46c6-bcca-7109aeeecd63"]},
+Open],ExpressionUUID -> "9e7a300b-a5e6-4643-8f43-a4a035b371b0"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13.2 for Wolfram Cloud 1.65 (April 11, 2023)"]

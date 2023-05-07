@@ -1,0 +1,31 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{"y","=",RowBox[{"{",RowBox[
+{"1",",","2",",","3",",","10",",","11"}],"}"}]}],";"}],"\n",RowBox[{RowBox[{"f","=",RowBox[
+{"{",RowBox[{"2",",","5",",","10",",","20",",","3"}],"}"}]}],";"}],"\n",RowBox[{RowBox[
+{"n","=",RowBox[{"Length","[","y","]"}]}],";"}],"\n",RowBox[{RowBox[{"n","=",RowBox[
+{"Length","[","f","]"}]}],";"}],"\n",RowBox[{RowBox[{"i","=","1"}],";"}],"\n",RowBox[
+{RowBox[{"While","[",RowBox[{RowBox[{"i","\[LessEqual]","n"}],",",RowBox[{RowBox[
+{RowBox[{"L","[",RowBox[{"i",",","x_"}],"]"}],"=",RowBox[{RowBox[{"(",RowBox[{"Product","[",RowBox[
+{RowBox[{RowBox[{"(",RowBox[{"x","-",RowBox[{"y","[",RowBox[{"[","j","]"}],"]"}]}],")"}],"/",RowBox[
+{"(",RowBox[{RowBox[{"y","[",RowBox[{"[","i","]"}],"]"}],"-",RowBox[{"y","[",RowBox[
+{"[","j","]"}],"]"}]}],")"}]}],",",RowBox[{"{",RowBox[{"j",",",RowBox[{"j","=","1"}],",",RowBox[
+{"i","-","1"}]}],"}"}]}],"]"}],")"}],"*",RowBox[{"(",RowBox[{"Product","[",RowBox[
+{RowBox[{RowBox[{"(",RowBox[{"x","-",RowBox[{"y","[",RowBox[{"[","j","]"}],"]"}]}],")"}],"/",RowBox[
+{"(",RowBox[{RowBox[{"y","[",RowBox[{"[","i","]"}],"]"}],"-",RowBox[{"y","[",RowBox[
+{"[","j","]"}],"]"}]}],")"}]}],",",RowBox[{"{",RowBox[{"j",",",RowBox[{"j","=",RowBox[
+{"i","+","1"}]}],",","n"}],"}"}]}],"]"}],")"}]}]}],";",RowBox[{"i","++"}]}]}],"]"}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"Lagrange","[","x_","]"}],"=",RowBox[{"Sum","[",RowBox[{RowBox[{"(",RowBox[
+{RowBox[{"L","[",RowBox[{"k",",","x"}],"]"}],"*",RowBox[{"f","[",RowBox[{"[","k","]"}],"]"}]}],")"}],",",RowBox[
+{"{",RowBox[{"k",",",RowBox[{"k","=","1"}],",","n"}],"}"}]}],"]"}]}],";"}],"\n",RowBox[
+{RowBox[{"g","=",RowBox[{"Simplify","[",RowBox[{"N","[",RowBox[{"Lagrange","[","x","]"}],"]"}],"]"}]}],";"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Simplyfied Lagrange Interpolating Polynomial=\""," ","g"}],"]"}]}],
+"Input",CellLabel -> "In[248]:= ",ExpressionUUID -> "c5efafe6-bba9-4f59-8be4-1ff3cb9999a8"],Cell[
+BoxData[
+RowBox[{"\"Simplyfied Lagrange Interpolating Polynomial=\""," ",RowBox[{"(",RowBox[
+{RowBox[{"1.6904761904761876`","\[VeryThinSpace]"}],"-",RowBox[{"1.2384920634920649`"," ","x"}],"+",RowBox[
+{"1.640277777777778`"," ",SuperscriptBox["x","2"]}],"-",RowBox[{"0.08769841269841272`"," ",SuperscriptBox[
+"x","3"]}],"-",RowBox[{"0.004563492063492061`"," ",SuperscriptBox["x","4"]}]}],")"}]}],
+StandardForm],"Print",ExpressionUUID -> "ba2867e1-679c-4cd4-bff7-c5802652e6f7"]},
+Open],ExpressionUUID -> "f7980fef-8de9-4486-80bd-22f1055bb42b"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13.2 for Wolfram Cloud 1.65 (April 11, 2023)"]
